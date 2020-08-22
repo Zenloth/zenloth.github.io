@@ -1,9 +1,66 @@
-* {
+/** {
   box-sizing: border-box;
 }
-
+*/
 body {
-  font-family: Arial;
-  padding: 10px;
-  background: #231f20;
+  font-family: Calibri;
+  margin:0;
+  background: #505050;
 }
+.wrap {
+  display:table;
+  width:100vw;
+  line-height:100vh;/*something not right here, causing slightly too big*/
+  height:100vh;
+  margin:0px auto;
+  position:relative;
+  font-size:18px;
+  table-layout:fixed;
+  text-align:center;
+  border-collapse:collapse;
+}
+.column {
+  display:table-cell;
+  vertical-align:top;
+  width:33%;
+}
+.column p {
+  position:relative;
+  vertical-align: middle;
+  z-index:2;
+}
+.column1 {
+  color:#fff;
+  background:linear-gradient(0deg, #ffffff50, #50505050),url("../img/pexels-andre-moura-2523959.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.column2 {
+	color:#fff;
+  background:linear-gradient(0deg, #ffffff50, #50505050),url("../img/pexels-anni-roenkae-2832382.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.column3 {
+	color:#fff;
+  background:linear-gradient(0deg, #ffffff50, #50505050),url("../img/pexels-bruno-thethe-1910236.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+}
+/*.wrap:after {
+	content:"";
+	position:absolute;
+	z-index:1;
+	top:0;
+	bottom:0;
+	left:33%;
+	width:34%;
+	background:#ff0000;
+	-webkit-transform:skewX(-3deg);
+	transform:skewX(-3deg);
+}*/
