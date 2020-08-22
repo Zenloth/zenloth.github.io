@@ -34,7 +34,7 @@ body {
   width:50%;
   opacity:1;
 }
-.column p {
+.column h2 {
   position:relative;
   vertical-align: middle;
   z-index:2;
