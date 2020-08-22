@@ -28,7 +28,6 @@ span {
   height:100%;
   top:0;
   left: 0;
-
   z-index: 1;
   background-image: url("../img/empty.gif");
 }
@@ -43,6 +42,17 @@ span {
   table-layout:fixed;
   text-align:center;
   border-collapse:collapse;
+  overflow:hidden;
+
+}
+.content{
+  position:absolute;
+  left:-7%;
+  width:120%;
+  transform:skew(-5deg);
+}
+.content a{
+  transform:skew(5deg);
 }
 .title{
   color:#ffffff;
@@ -52,10 +62,10 @@ span {
   right:16px;
   pointer-events:none;
 }
-.column {
+.col {
   display:table-cell;
   vertical-align:top;
-  width:33%;
+  width:38vw;
   transition:width 1s;
   opacity:0.5;
   transition: 1.5s ease;
@@ -64,32 +74,24 @@ span {
   background-size:cover;
   z-index:2;
 }
-.column:hover{
-  width:50%;
+.col:hover{
+  width:60vw;
   opacity:1;
 }
-.column1 {
+
+
+
+.col-1 {
   background-image:url("../img/pexels-andre-moura-2523959.jpg");
   border-right-style:solid;
 }
-.column2 {
+
+.col-2 {
   background-image:url("../img/pexels-anni-roenkae-2832382.jpg");
   border-right-style:solid;
 }
-.column3 {
+.col-3 {
   background-image:url("../img/pexels-bruno-thethe-1910236.jpg");
 }
 
 }
-/*.wrap:after {
-	content:"";
-	position:absolute;
-	z-index:1;
-	top:0;
-	bottom:0;
-	left:33%;
-	width:34%;
-	background:#ff0000;
-	-webkit-transform:skewX(-3deg);
-	transform:skewX(-3deg);
-}*/
