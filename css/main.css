@@ -23,28 +23,32 @@ body {
   display:table-cell;
   vertical-align:top;
   width:33%;
+  transition:width 1s;
+}
+.column:hover{
+  width:50%;
 }
 .column p {
   position:relative;
   vertical-align: middle;
   z-index:2;
+  color:#fff;
 }
 .column1 {
-  color:#fff;
   background:linear-gradient(0deg, #ffffff50, #50505050),url("../img/pexels-andre-moura-2523959.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+  border-right-style:solid;
 }
 .column2 {
-	color:#fff;
   background:linear-gradient(0deg, #ffffff50, #50505050),url("../img/pexels-anni-roenkae-2832382.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+  border-right-style:solid;
 }
 .column3 {
-	color:#fff;
   background:linear-gradient(0deg, #ffffff50, #50505050),url("../img/pexels-bruno-thethe-1910236.jpg");
   background-repeat: no-repeat;
   background-position: center;
