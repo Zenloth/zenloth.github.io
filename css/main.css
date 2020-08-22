@@ -16,18 +16,23 @@ body {
   height:10vh;
   transform: skew(-5deg);
   border-radius: 0 15px 0 15px;
-  padding:3vw;
+  padding-left:1vw;
+  padding-right:1vw;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+  display:flex;
   float: left;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
   font-size: 17px;
   transform: skew(5deg);
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease;
+  height:100%;
+  width:10%;
+  min-width:5em;
 }
 
 /* Change the color of links on hover */
