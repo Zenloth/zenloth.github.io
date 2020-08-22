@@ -66,11 +66,10 @@ span {
   display:table-cell;
   vertical-align:top;
   width:38vw;
-  transition:width 1s;
   opacity:0.5;
   transition: 1.5s ease;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center left;
   background-size:cover;
   z-index:2;
 }
