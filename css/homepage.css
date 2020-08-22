@@ -2,7 +2,7 @@ body {
   font-family: Calibri;
   margin:0px auto;
   padding:0px auto;
-  background: #505050;
+  background: #333;
 }
 h1 {
 
@@ -29,6 +29,7 @@ span {
   z-index: 1;
   background-image: url("../img/empty.gif");
 }
+
 .wrap {
   display:table;
   width:100vw;
@@ -42,11 +43,12 @@ span {
   border-collapse:collapse;
   overflow:hidden;
 
+
 }
 .content{
   position:absolute;
   left:-7%;
-  width:120%;
+  width:112%;/*112*/
   transform:skew(-5deg);
 }
 .content a{
@@ -63,13 +65,16 @@ span {
 .col {
   display:table-cell;
   vertical-align:top;
-  width:38vw;
-  opacity:0.5;
+  width:38vw;/*38*/
+  opacity:0.6;
   transition: 1.5s ease;
   background-repeat: no-repeat;
   background-position: center left;
   background-size:cover;
   z-index:2;
+  border-color:#333;
+  border-left-style:solid;
+  border-right-style:solid;
 }
 .col:hover{
   width:60vw;
@@ -80,12 +85,10 @@ span {
 
 .col-1 {
   background-image:url("../img/pexels-andre-moura-2523959.jpg");
-  border-right-style:solid;
 }
 
 .col-2 {
   background-image:url("../img/pexels-anni-roenkae-2832382.jpg");
-  border-right-style:solid;
 }
 .col-3 {
   background-image:url("../img/pexels-bruno-thethe-1910236.jpg");
