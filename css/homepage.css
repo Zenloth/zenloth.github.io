@@ -4,20 +4,39 @@
 */
 body {
   font-family: Calibri;
-  margin:0;
+  margin:0px auto;
+  padding:0px auto;
   background: #505050;
+}
+h1{
+
+}
+h2{
+  position:relative;
+  vertical-align: middle;
+  line-height:100vh;
+  color:#ffffff;
+  margin:0px;
 }
 .wrap {
   display:table;
   width:100vw;
-  line-height:100vh;/*something not right here, causing slightly too big*/
   height:100vh;
   margin:0px auto;
+  padding:0px;
   position:relative;
   font-size:18px;
   table-layout:fixed;
   text-align:center;
   border-collapse:collapse;
+}
+.title{
+  color:#ffffff;
+  position:absolute;
+  z-index:4;
+  top:8px;
+  right:16px;
+  pointer-events:none;
 }
 .column {
   display:table-cell;
@@ -29,16 +48,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+  z-index:2;
 }
 .column:hover{
   width:50%;
   opacity:1;
-}
-.column h2 {
-  position:relative;
-  vertical-align: middle;
-  z-index:2;
-  color:#fff;
 }
 .column1 {
   background-image:url("../img/pexels-andre-moura-2523959.jpg");
