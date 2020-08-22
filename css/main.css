@@ -26,6 +26,9 @@ body {
   transition:width 1s;
   opacity:0.5;
   transition: 1.5s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
 .column:hover{
   width:50%;
@@ -38,25 +41,15 @@ body {
   color:#fff;
 }
 .column1 {
-
   background-image:url("../img/pexels-andre-moura-2523959.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
   border-right-style:solid;
 }
 .column2 {
   background-image:url("../img/pexels-anni-roenkae-2832382.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
   border-right-style:solid;
 }
 .column3 {
   background-image:url("../img/pexels-bruno-thethe-1910236.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
 }
 
 }
