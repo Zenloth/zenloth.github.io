@@ -16,18 +16,19 @@ ul{
 }
 /* Basic Top Nav Bar */
 #topnav{
+  position: - webkit-sticky; /*safari support*/
+  position: sticky;
+  top: 0;
   background-color: #333;
   overflow: hidden;
-  margin-top:3vh;
-  margin-left:auto;
-  margin-right:auto;
+  margin:3vh auto auto auto;
   width:80vw;
   height:10vh;
   transform: skew(-5deg);
   border-radius: 0 15px 0 15px;
   padding-left:.8vw;
   text-decoration:none;
-
+  transition: 1s; /*for js fancify*/
 }
 
 /* Navbar link styles*/
@@ -88,6 +89,7 @@ ul{
 }
 .app-content{
     margin:0 3%;
+    height:50vh;
 }
 
 .app-content h2{
