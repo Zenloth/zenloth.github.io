@@ -84,11 +84,9 @@ ul{
   width:90%;
   margin-left:auto;
   margin-right:auto;
-  transform: skew(-5deg);
   border-radius: 0 15px 0 15px;
 }
 .app-content{
-    transform: skew(5deg);
     margin:0 3%;
 }
 
@@ -97,7 +95,7 @@ ul{
   color:#000000;
   width:120%;
   /*top|left|bottom|right
-  Silly negative margin because skew*/
+  Silly negative margin to keep nice margins on rest of content*/
   margin:0 -10% 0 -10%;
   text-align: center;
 }
