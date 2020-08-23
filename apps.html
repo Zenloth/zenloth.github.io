@@ -42,16 +42,16 @@
         <p>Some validation behind the app.</p>
         <form>
           <div class="col">
-            <input id="ARTCalc-Decimal-B1" type="text" placeholder="Universe">
+            <input id="ARTCalc-Decimal-B1" class="ANInput" type="number" placeholder="Universe" onchange="decB1();">
           </div>
           <div class="col">
-            <input id="ARTCalc-ARTNet" type="text" placeholder="ARTNet (N:SN:U)">
+            <input id="ARTCalc-ARTNet" class="ANInput" type="text" placeholder="ARTNet (N:SN:U)" onchange="AN();">
           </div>
           <div class="col">
-            <input id="ARTCalc-Decimal-B0" type="text" placeholder="Decimal (Base 0)">
+            <input id="ARTCalc-Decimal-B0" class="ANInput" type="number" placeholder="Decimal (Base 0)" onchange="decB0();">
           </div>
           <div class="col">
-            <input id="ARTCalc-DMXChannels" type="text" placeholder="Max DMX Channels">
+            <input id="ARTCalc-DMXChannels" class="ANInput" type="number" placeholder="Max DMX Channels" onchange="DMXChan();">
           </div>
         </form>
       </div>
@@ -71,4 +71,6 @@
       </div>
     </div>
   </div>
+  <!--SCRIPTS-->
+  <script src="js/artnet.js"></script>
 </body>
