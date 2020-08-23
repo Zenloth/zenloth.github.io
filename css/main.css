@@ -15,6 +15,19 @@ ul{
 
 }
 /* Basic Top Nav Bar */
+#topnav-container{
+  position: - webkit-sticky; /*safari support*/
+  position: sticky;
+  top:0;
+  width: 100vw;
+  max-width: 100%;
+  height: 14vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color:red;*/
+  transition:1s;
+}
 #topnav{
   position: - webkit-sticky; /*safari support*/
   position: sticky;
