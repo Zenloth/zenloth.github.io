@@ -26,13 +26,3 @@ Sam and Ed break things
   * Cut length, power consumption, volt drop
 * Pixel Pitch Calculator
   * This could do a pixel per m^2, for given size. Could also build in power consumption etc.
-
-## Bugs
-### Overall
-* Transitions on page load. I dislike this.
-### Home Page
-### Nav Bar
-* The colour shift when highlighting is eww.
-### CV
-### Stuff
-### Apps
