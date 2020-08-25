@@ -2,15 +2,44 @@ body {
   font-family: Calibri;
   margin:0px auto;
   padding:0px auto;
-  background: #505050;
+  background-color:#262626;
 }
-
 h1 {
   padding-top: 20vh;
+  z-index:1;
+  color:white;
+  text-align: center;
+}
+
+
+.background-image {
+  background-image: url("../img/mainbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size:cover;
+  background-blend-mode: color-burn;
+  background-color: #aaa;
+  width:100%;
+  height:100%;
+  z-index:1;
+  position:fixed;
+  display:block;
+  filter:blur(5px);
+}
+
+.content {
+  z-index:2;
+  margin:0;
+  padding:0;
+  left: 0;
+  right: 0;
+  position:relative;
 }
 /*APPS*/
 .app-container{
-  background-color: #333;
+  z-index:2;
+  background-color: #E5E0DC;
+  color:#000000;
   overflow: hidden;
   margin-top:3vh;
   width:90%;
@@ -18,7 +47,7 @@ h1 {
   margin-right:auto;
   border-radius: 0 15px 0 15px;
   border-style:solid;
-  border-color:white;
+  border-color:#fff;
 }
 .app-content{
     margin:0 3%;
@@ -26,15 +55,11 @@ h1 {
 }
 
 .app-content h2{
-  background-color:#ffffff;
-  color:#000000;
+  background-color:#262626;
+  color:#ffffff;
   width:120%;
   /*top|left|bottom|right
   Silly negative margin to keep nice margins on rest of content*/
   margin:0 -10% 0 -10%;
   text-align: center;
-}
-
-.app-content p{
-  color:#ffffff;
 }

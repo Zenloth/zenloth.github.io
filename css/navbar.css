@@ -20,11 +20,12 @@
   overflow: hidden;
   /*background-color:red;*/
   transition:1s;
+  z-index:2;
 }
 #topnav{
   display: block;
   position:absolute;
-  background-color: #333;
+  background-color: #262626;
   overflow: hidden;
   margin:3vh auto auto auto;
   width:80vw;
@@ -32,7 +33,7 @@
   min-height: 50px;/*to stop squishyness*/
   transform: skew(-5deg);
   border-radius: 0 15px 0 15px;
-  border-color:white;
+  border-color:#80333E;
   border-style:solid;
   padding-left:.8vw;
   text-decoration:none;
@@ -109,6 +110,6 @@
 }
 /* Add a color to the active/current link */
 #topnav a.active {
-  background-color: #4CAF50;
+  background-color: #80333E;
   color: white;
 }
