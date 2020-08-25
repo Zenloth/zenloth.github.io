@@ -6,7 +6,7 @@ function youScrollMeRightRound() {
     document.getElementById("topnav").style.width = "103vw";
     document.getElementById("topnav").style.height = "5vh";
     document.getElementById("topnav-container").style.height = "5vh";
-    document.getElementById("topnav-container").style.minHeight = "5vh";
+    document.getElementById("topnav-container").style.minHeight = "50px";
     document.getElementById("topnav").style.marginTop = "0";
 
   } else {
