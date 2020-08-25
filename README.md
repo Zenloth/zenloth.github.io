@@ -26,3 +26,11 @@ Sam and Ed break things
   * Cut length, power consumption, volt drop
 * Pixel Pitch Calculator
   * This could do a pixel per m^2, for given size. Could also build in power consumption etc.
+
+## Colour Pallet
+For my reference to develop consistent theme.
+* Paper:
+* Background:
+* Highlight/Emphasis:
+* Heading Text:
+* Body Text:
