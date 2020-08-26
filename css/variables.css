@@ -1,0 +1,7 @@
+:root{
+  --dark-bg: #262626; /* Page background - DARK BLACK*/
+  --light-bg: #E5E0DC;/* Light background - CREAM*/
+  --highlight: #80333E; /* Highlight - MAROON */
+  --light-text: #F2F2F2; /* Light text - OFF-WHITE */
+  --dark-text: black; /* Dark text - BLACK */
+}

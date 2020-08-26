@@ -1,17 +1,17 @@
 body {
-  font-family: Calibri;
+  font-family: sans-serif;
   margin:0px auto;
   padding:0px auto;
-  background-color:#262626;
+  background-color: var(--dark-bg);
 }
 h1 {
   padding-top: 20vh;
   z-index:1;
-  color:white;
+  color: var(--light-text);
   text-align: center;
 }
 
-
+/*
 .background-image {
   background-image: url("../img/mainbg.jpg");
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ h1 {
   position:fixed;
   display:block;
   filter:blur(5px);
-}
+}*/
 
 .content {
   z-index:2;
@@ -38,7 +38,7 @@ h1 {
 /*APPS*/
 .app-container{
   z-index:2;
-  background-color: #E5E0DC;
+  background-color: var(--light-bg);
   color:#000000;
   overflow: hidden;
   margin-top:3vh;
@@ -48,18 +48,40 @@ h1 {
   border-radius: 0 15px 0 15px;
   border-style:solid;
   border-color:#fff;
-}
-.app-content{
-    margin:0 3%;
-    height:50vh;
+  /*max-height:5vh;*/
+  transition:1s;
+  height:5vh;
+
 }
 
+.app-body{
+  margin:0 3%;
+
+    transition:1s;
+}
 .app-content h2{
-  background-color:#262626;
-  color:#ffffff;
-  width:120%;
+  margin:0 -10% 0 -10%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration:none;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  height:5vh;
   /*top|left|bottom|right
   Silly negative margin to keep nice margins on rest of content*/
   margin:0 -10% 0 -10%;
-  text-align: center;
+}
+
+.app-content h2:hover{
+  background-color: var(--light-text);
+  color: black;
+}
+.accordion-check {
+  display:none;
+}
+.accordion-check:checked + .app-container {
+  height:500px;
+  border-color:var(--highlight);
 }

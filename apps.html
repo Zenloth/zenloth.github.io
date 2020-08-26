@@ -6,6 +6,7 @@
   <title>Ed's Apps</title>
   <link rel="stylesheet" href="css/main.css" type="text/css" />
   <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="css/variables.css" type="text/css" />
 </head>
 <body>
 <!--<div class="background-image"></div>-->
@@ -41,37 +42,44 @@
         <h1> Apps </h1>
     </div>
     <!--ARTNet Universe Calculator-->
+    <input type="checkbox" id="chck1" class="accordion-check">
     <div class="app-container">
       <div class="app-content">
-        <h2>ARTNet Universe Calculator</h2>
-        <p>Some validation behind the app.</p>
-        <form>
-          <div class="col">
-            <input id="ARTCalc-Decimal-B1" class="ANInput" type="text" placeholder="Universe" onchange="decB1();">
-          </div>
-          <div class="col">
-            <input id="ARTCalc-ARTNet" class="ANInput" type="text" placeholder="ARTNet (N:SN:U)" onchange="AN();">
-          </div>
-          <div class="col">
-            <input id="ARTCalc-Decimal-B0" class="ANInput" type="text" placeholder="Decimal (Base 0)" onchange="decB0();">
-          </div>
-          <div class="col">
-            <input id="ARTCalc-DMXChannels" class="ANInput" type="text" placeholder="Max DMX Channels" onchange="DMXChan();">
-          </div>
-        </form>
+        <label for="chck1"><h2>ARTNet Universe Calculator</h2></label>
+        <div class="app-body" id="artcalc">
+          <p>Some validation behind the app.</p>
+          <form>
+            <div class="col">
+              <input id="ARTCalc-Decimal-B1" class="ANInput" type="text" placeholder="Universe" onchange="decB1();">
+            </div>
+            <div class="col">
+              <input id="ARTCalc-ARTNet" class="ANInput" type="text" placeholder="ARTNet (N:SN:U)" onchange="AN();">
+            </div>
+            <div class="col">
+              <input id="ARTCalc-Decimal-B0" class="ANInput" type="text" placeholder="Decimal (Base 0)" onchange="decB0();">
+            </div>
+            <div class="col">
+              <input id="ARTCalc-DMXChannels" class="ANInput" type="text" placeholder="Max DMX Channels" onchange="DMXChan();">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <!--Pixel Tape Calculator-->
     <div class="app-container">
       <div class="app-content">
-        <h2>Pixel Tape Calculator</h2>
+        <div class="app-head">
+          <a href="#"><h2>Pixel Tape Calculator</h2></a>
+        </div>
         <p>Some validation behind the app.</p>
       </div>
     </div>
     <!--Pixel Pitch Calculator-->
     <div class="app-container">
       <div class="app-content">
-        <h2>Pixel Pitch Calculator</h2>
+        <div class="app-head">
+          <a href="#"><h2>Pixel Pitch Calculator</h2></a>
+        </div>
         <p>Some validation behind the app.</p>
       </div>
     </div>

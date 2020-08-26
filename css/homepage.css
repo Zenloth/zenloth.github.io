@@ -1,17 +1,18 @@
 body {
-  font-family: Calibri;
+  font-family: sans-serif;
   margin:0px auto;
   padding:0px auto;
-  background: #333;
+  background: #333; /* Grey for darkening */
 }
 h1 {
-
+  border-bottom: solid;
+  border-bottom-color: var(--highlight);
 }
 h2 {
   position:relative;
   vertical-align: middle;
   line-height:100vh;
-  color:#ffffff;
+  color:var(--light-text);
   margin:0px;
 }
 a {
@@ -55,12 +56,13 @@ span {
   transform:skew(5deg);
 }
 .title{
-  color:#ffffff;
+  color:var(--light-text);
   position:absolute;
   z-index:4;
   top:8px;
   right:16px;
   pointer-events:none;
+
 }
 .col {
   display:table-cell;
@@ -72,7 +74,7 @@ span {
   background-position: center left;
   background-size:cover;
   z-index:2;
-  border-color:#333;
+  border-color:var(--highlight);
   border-left-style:solid;
   border-right-style:solid;
 }
