@@ -1,5 +1,6 @@
 body {
-  font-family: sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
   margin:0px auto;
   padding:0px auto;
   background-color: var(--dark-bg);
@@ -9,6 +10,11 @@ h1 {
   z-index:1;
   color: var(--light-text);
   text-align: center;
+    font-weight: lighter;
+}
+
+h2{
+    font-weight: lighter;
 }
 
 /*
