@@ -77,12 +77,12 @@ function doMath() {
         var s = "00000" + num; //add some excessive 0s at the start
         return s.substr(s.length-len); //remove until length of string is correct
     }
-    artnet = zeroStart(artnet, 5); //Limit artnet var to 5 chars with leading 0s if required
+    artnet = zeroStart(artnet, 4); //Limit artnet var to 5 chars with leading 0s if required
 
     //Formatting to XX:X:X  (Artnet NET:SUBNET:UNI)
     var myRe = /(\w{2})(\w{1})(\w{1})/; //This is the regex string to "match" to
     var myArray = artnet.match(myRe); //Generate an array based on the regex rule and string
-    artnet = myArray[1] + ':' + myArray[2] + ':' + myArray[3]; //Add ':' between array items
+    artnet = myArray.slice(1).join(':'); //Add ':' between array items and remove item [0] which is original string
       }
 
   //Calculate Decimal universe (base0)
