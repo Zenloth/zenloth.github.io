@@ -55,7 +55,7 @@ function DMXChan() {
       return;
     } else{
   //Do the thing of making Decimal value
-  decimalBase1 = Math.ceil(dmxChans).value) / 512);
+  decimalBase1 = Math.ceil(dmxChans.value) / 512);
   doMath();
   }
 }
