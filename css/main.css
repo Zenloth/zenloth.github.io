@@ -10,11 +10,11 @@ h1 {
   z-index:1;
   color: var(--light-text);
   text-align: center;
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 h2{
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 /*
