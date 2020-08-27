@@ -82,7 +82,7 @@ function doMath() {
     //Formatting to XX:X:X  (Artnet NET:SUBNET:UNI)
     var myRe = /(\w{2})(\w{1})(\w{1})/; //This is the regex string to "match" to
     var myArray = artnet.match(myRe); //Generate an array based on the regex rule and string
-    artnet = myArray[1] + ':' + myArray[2] + ':' + myArray[3]; //Add ':' between array items
+    artnet = myArray.slice(1).join(':'); //Add ':' between array items and remove item [0] which is original string
       }
 
   //Calculate Decimal universe (base0)
