@@ -46,7 +46,8 @@ h2{
   z-index:2;
   background-color: var(--light-bg);
   color:#000000;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: none;
   margin-top:3vh;
   width:90%;
   margin-left:auto;
@@ -75,6 +76,10 @@ h2{
   background-color: var(--dark-bg);
   color: var(--light-text);
   height:5vh;
+  position:sticky;
+  position: -webkit-sticky; /* Safari */
+  top:0;
+
   /*top|left|bottom|right
   Silly negative margin to keep nice margins on rest of content*/
   margin:0 -10% 0 -10%;
