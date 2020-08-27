@@ -46,8 +46,8 @@ h2{
   z-index:2;
   background-color: var(--light-bg);
   color:#000000;
-  overflow-y: scroll;
-  overflow-x: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
   margin-top:3vh;
   width:90%;
   margin-left:auto;
@@ -95,4 +95,5 @@ h2{
 .accordion-check:checked + .app-container {
   height:500px;
   border-color:var(--highlight);
+  overflow-y: scroll;
 }
