@@ -1,7 +1,7 @@
 /* Moved all navbar stylings out to make easier */
 
 #topnav-container{
-  position: - webkit-sticky; /*safari support*/
+  position: - webkit-sticky; /* Safari*/
   position: sticky;
   position: fixed;
   display: flex;
@@ -12,7 +12,7 @@
   width: 100vw;
   max-width: 100%;
   height: 14vh;
-  min-height: 70px; /* to stop squishyness */
+  min-height: 70px; /* To stop squishyness */
   margin: 0;
   padding: 0 0 14vh 0;
   overflow: hidden;
@@ -27,14 +27,14 @@
   margin: 3vh auto auto auto;
   width: 80vw;
   height: 10vh;
-  min-height: 50px; /* to stop squishyness */
+  min-height: 50px; /* To stop squishyness */
   transform: skew(-5deg);
   border-radius: 0 15px 0 15px;
   border-color: var(--highlight);
   border-style: solid;
   padding-left: .8vw;
   text-decoration: none;
-  transition: 1s; /* for js fancify */
+  transition: 1s; /* For js fancify */
 }
 #topnav ul{ /* List container */
   display: flex;
