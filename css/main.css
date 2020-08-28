@@ -59,10 +59,8 @@ h2{
   border-radius: 0 15px 0 15px;
   border-style: solid;
   border-color: #fff;
-  /*max-height:5vh;*/
   transition: 1s;
   height: 5vh;
-
 }
 
 .app-body{
@@ -84,12 +82,11 @@ h2{
   overflow-y: scroll;
 }
 
-
 /*
-//
-//FIXED STYLING
-//
-*/
+ *
+ *FIXED STYLING
+ *
+ */
 
 .fixed-container{
   z-index: 2;
