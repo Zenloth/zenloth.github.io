@@ -80,7 +80,7 @@ function doMath() {
     artnet = zeroStart(artnet, 4); //Limit artnet var to 5 chars with leading 0s if required
 
     //Formatting to XX:X:X  (Artnet NET:SUBNET:UNI)
-    var myRe = /(\w{2})(\w{1})(\w{1})/; //This is the regex string to "match" to
+    var myRe = /(\w{2})(\w)(\w)/; //This is the regex string to "match" to
     var myArray = artnet.match(myRe); //Generate an array based on the regex rule and string
     artnet = myArray.slice(1).join(':'); //Add ':' between array items and remove item [0] which is original string
       }
