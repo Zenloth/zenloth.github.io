@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--love me some FA icons-->
+  <script src="https://kit.fontawesome.com/e0927e1a6f.js" crossorigin="anonymous"></script>
+  <title>Ed's Apps</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="css/variables.css" type="text/css" />
+</head>
+<body>
+<!--<div class="background-image"></div>-->
+<div class="content">
+<!--NAVIGATION BAR-->
+  <div id="topnav-container">
+    <div id="topnav">
+      <ul>
+        <li><a href="index.html">
+          <i class="fas fa-home"></i>
+          <p class="icon-text">Home</p>
+        </a></li>
+        <li><a href="cv.html">
+          <i class="fas fa-pen-square"></i>
+          <p class="icon-text">CV</p>
+        </a></li>
+        <li><a href="stuff.html">
+          <i class="fas fa-question-circle"></i>
+          <p class="icon-text">Stuff</p>
+        </a></li>
+        <li><a class="active" href="apps.html">
+          <i class="fas fa-bolt"></i>
+          <p class="icon-text">Apps</p>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+<!--END NAV BAR-->
+
+  <div class="wrap">
+    <div class="title">
+        <h1> Apps </h1>
+    </div>
+    <!--ARTNet Universe Calculator-->
+    <input type="checkbox" id="chck1" class="accordion-check">
+    <div class="accordion-container">
+      <div class="accordion-content">
+        <label for="chck1"><h2>ARTNet Universe Calculator</h2></label>
+        <div class="app-body" id="artcalc">
+          <h3>Why</h3>
+          <p>I started this as a basic & relevant project for me to begin learning JavaScript.</p>
+          <h3>Background</h3>
+          <p>In entertainment lighting, individual parameters of lighting fixtures are controlled on DMX channels. One DMX512 frame can contain the data for 512 channels, so when lighting rigs got more complicated, this was split into "universes". One implementation of DMX over a standard IP network, ARTNet 3, configures its universes with a hex value in the XX:X:X format (Network : Subnet : Universe), with a theoretical limit of 32,768 universes.</p>
+          <h3>Objective</h3>
+          <p>In essence, I wanted to create an "on-change" calculator, that converted from most standard input formats of DMX Universes to all other types (base 1, base 0, DMX channel count, ARTNet hex etc.).</p>
+          <h3>The App</h3>
+          <form>
+            <div class="col">
+              <input id="ARTCalc-Decimal-B1" class="ANInput" type="text" placeholder="Universe" onchange="decB1();">
+            </div>
+            <div class="col">
+              <input id="ARTCalc-ARTNet" class="ANInput" type="text" placeholder="ARTNet (N:SN:U)" onchange="AN();">
+            </div>
+            <div class="col">
+              <input id="ARTCalc-Decimal-B0" class="ANInput" type="text" placeholder="Decimal (Base 0)" onchange="decB0();">
+            </div>
+            <div class="col">
+              <input id="ARTCalc-DMXChannels" class="ANInput" type="text" placeholder="Max DMX Channels" onchange="DMXChan();">
+            </div>
+          </form>
+          <h3>Current thoughts</h3>
+          <p>I need to style this and validation on the artnet input.</p>
+        </div>
+      </div>
+    </div>
+    <!--Pixel Tape Calculator-->
+    <input type="checkbox" id="chck2" class="accordion-check">
+    <div class="accordion-container">
+      <div class="accordion-content">
+        <div class="app-head">
+          <label for="chck2"><h2>Pixel Tape Calculator</h2></label>
+        </div>
+        <p>Some validation behind the app.</p>
+      </div>
+    </div>
+    <!--Pixel Pitch Calculator-->
+    <input type="checkbox" id="chck3" class="accordion-check">
+    <div class="accordion-container">
+      <div class="accordion-content">
+        <div class="app-head">
+          <label for="chck3"><h2>Pixel Pitch Calculator</h2></a></label>
+        </div>
+        <p>Some validation behind the app.</p>
+      </div>
+    </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="js/artnet.js"></script>
+  <script src="js/navbar.js"></script>
+  </div>
+</body>
