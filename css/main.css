@@ -59,7 +59,7 @@ h2{
   margin: 0 3%;
   transition: 1s;
 }
-.accordion-content h2:hover{
+.accordion-content h2:hover {
   background-color: var(--light-text);
   color: black;
 }
@@ -88,4 +88,9 @@ h2{
   border-style: solid;
   border-color: #fff;
   height: 90vh;
+}
+
+.fixed-container a:hover > h2{
+  background-color: var(--light-text);
+  color: black;
 }
