@@ -1,7 +1,5 @@
 /* Moved all navbar stylings out to make easier */
 
-
-/* Basic Top Nav Bar */
 #topnav-container{
   position: - webkit-sticky; /*safari support*/
   position: sticky;
@@ -14,7 +12,7 @@
   width: 100vw;
   max-width: 100%;
   height: 14vh;
-  min-height: 70px; /*to stop squishyness*/
+  min-height: 70px; /* to stop squishyness */
   margin: 0;
   padding: 0 0 14vh 0;
   overflow: hidden;
@@ -29,25 +27,23 @@
   margin: 3vh auto auto auto;
   width: 80vw;
   height: 10vh;
-  min-height: 50px;/*to stop squishyness*/
+  min-height: 50px; /* to stop squishyness */
   transform: skew(-5deg);
   border-radius: 0 15px 0 15px;
   border-color: var(--highlight);
   border-style: solid;
   padding-left: .8vw;
   text-decoration: none;
-  transition: 1s; /*for js fancify*/
+  transition: 1s; /* for js fancify */
 }
-
-/*List container*/
-#topnav ul{
+#topnav ul{ /* List container */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   position: fixed;
-  width: 103%; /* I hate this fix*/
+  width: 103%; /* I hate this fix */
   height: 100%;
-  left: 50%; /* again, I can't say how much I hate this fix*/
+  left: 50%; /* again, I can't say how much I hate this fix */
   transform: translatex(-50%)skew(5deg);
   align-items: center;
   justify-content: center;
@@ -55,8 +51,7 @@
   padding: 0;
   transition: .5s ease;
 }
-/* Navbar individual item containers*/
-#topnav li {
+#topnav li { /* Navbar individual item containers */
   float: left;
   height: 100%;
   width: 25%;
@@ -64,9 +59,7 @@
   padding: 0;
   list-style: none;
 }
-
-/* Navbar link styling*/
-#topnav a {
+#topnav a { /* Navbar link styling */
   display: flex;
   align-items: center; justify-content: center; flex-direction: column;
   color: var(--light-text);
@@ -75,16 +68,12 @@
   text-decoration: none;
   font-size: x-large;  /* Also scales icons */
 }
-
-/* Navbar ICON styling */
-#topnav i{
+#topnav i{ /* Navbar ICON styling */
   position: fixed;
   transition: .5s ease;
   padding: auto;
 }
-
-/* Navbar TEXT for the icon styling */
-#topnav .icon-text{
+#topnav .icon-text{ /* Navbar TEXT for the icon styling */
   transform: translatey(10vh);
   transition: .5s ease;
   padding: 0;
@@ -92,22 +81,18 @@
   float: left;
   text-align: center;
 }
-
-/* Change the color of links on hover */
-#topnav a:hover{
+#topnav a:hover{ /* Change the color of links on hover */
   background-color: var(--light-bg);
   color: var(--dark-text);
   z-index: 9;
 }
-/* Move stuff around on hover */
-#topnav a:hover > .icon-text{
+#topnav a:hover > .icon-text{ /* Move the icon text when the link is hovered */
   transform: translatey(50%);
 }
-#topnav a:hover > i{
+#topnav a:hover > i{ /* Move the icon when the link is hovered */
   transform: translatey(-50%);
 }
-/* Add a color to the active/current link */
-#topnav a.active {
+#topnav a.active { /* Add a color to the active/current link */
   background-color: var(--highlight);
   color: white;
 }

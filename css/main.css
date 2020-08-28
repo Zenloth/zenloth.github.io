@@ -12,7 +12,6 @@ h1 {
   text-align: center;
   font-weight: lighter;
 }
-
 h2{
   font-weight: lighter;
   margin: 0 -10% 0 -10%;
@@ -27,11 +26,8 @@ h2{
   position: sticky;
   position: -webkit-sticky; /* Safari */
   top: 0;
-  /*top|left|bottom|right
-  Silly negative margin to keep nice margins on rest of content*/
-  margin: 0 -10% 0 -10%;
+  margin: 0 -10% 0 -10%;  /* top|left|bottom|right -- Silly negative margin to keep nice margins on rest of content */
 }
-
 .content {
   z-index: 2;
   margin: 0;
@@ -40,12 +36,9 @@ h2{
   right: 0;
   position: relative;
 }
-
 /*
-//
-//ACCORDION STYLING
-//
-*/
+ *ACCORDION STYLING
+ */
 .accordion-container{
   z-index: 2;
   background-color: var(--light-bg);
@@ -62,13 +55,10 @@ h2{
   transition: 1s;
   height: 5vh;
 }
-
 .app-body{
   margin: 0 3%;
   transition: 1s;
 }
-
-
 .accordion-content h2:hover{
   background-color: var(--light-text);
   color: black;
@@ -81,13 +71,9 @@ h2{
   border-color: var(--highlight);
   overflow-y: scroll;
 }
-
 /*
- *
  *FIXED STYLING
- *
  */
-
 .fixed-container{
   z-index: 2;
   background-color: var(--light-bg);
