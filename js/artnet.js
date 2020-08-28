@@ -72,12 +72,8 @@ function doMath() {
     artnet = decimalBase1.toString(16);
     //Get that shit uppercase
     artnet = artnet.toUpperCase();
-    //Quicky function for leading 0s
-    function zeroStart(num, len) {
-        var s = "00000" + num; //add some excessive 0s at the start
-        return s.substr(s.length-len); //remove until length of string is correct
-    }
-    artnet = zeroStart(artnet, 4); //Limit artnet var to 5 chars with leading 0s if required
+
+    artnet = artnet.padStart(4,"0"); //Limit artnet var to 5 chars with leading 0s if required
 
     //Formatting to XX:X:X  (Artnet NET:SUBNET:UNI)
     var myRe = /(\w{2})(\w)(\w)/; //This is the regex string to "match" to
